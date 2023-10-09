@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        let n = +prompt("Nhập số vào đây để kiểm tra đây có phải số nguyên tố hay không");
+        let soNguyen=[];
+        soNguyen.push(n);
+        console.log(soNguyen);
+        function soNguyenTo(q){
+            let a = true
+            if(q<2){
+                a = false;
+            }else{
+                for( let i = 2; i < q-1; i++){
+                    if (q % i == 0){
+                        a = false;
+                        break
+                    }
+                }
+            }
+            if( a == true){
+                console.log(q, "là số nguyen tố");
+            }else{
+                console.log(q, "không phải là số nguyên tố");
+            }
+            
+        }
+       soNguyenTo(soNguyen);
+
+    </script>
+</body>
+</html>

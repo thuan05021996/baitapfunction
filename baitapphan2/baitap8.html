@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let n=+prompt("nhap số năm vào đây")
+        function check(year){
+            if (year % 4 == 0) {
+                if (year % 100 == 0) {
+                    if (year % 400 == 0) {
+                     alert(year + " đây là năm nhuận");
+                     
+                } else {
+                alert(year + "đây là năm không nhuận");
+               
+                }
+            } else {
+                alert(year +" đây là năm nhuận");
+               
+            }
+            } else {
+            alert(year + " đây là năm không nhuận");
+           
+            }
+        }
+       console.log(check(n),);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soNguyen=[];
+        for(let i = 0;i <3; i++){
+            let a=+prompt("nhập  1 số nguyên vào đây")
+            soNguyen.push(a)
+        }
+       console.log(soNguyen);
+       function minArr(q){
+        let min = q[0];
+        for(let i = 0; i < q.length; i++){
+            if(q[i]<min){
+                min=q[i];
+            }
+        }
+        return min;
+       }
+       let min = minArr(soNguyen);
+       alert(min,"là số nhỏ nhất");
+       
+       /*  
+        function minarr(arrq){
+            let numBers = +prompt("nhập vào 3 số");
+            let arr = numBers
+            let min = arr[0];
+            
+            for( let i = 0; i < arr.length; i++);
+            if(arr[i] < min){
+                min = arr[i];
+            }
+            return min
+        }
+        let min = minarr();
+        alert(min); */
+    </script>
+</body>
+</html>
